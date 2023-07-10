@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Weather Meter",
+    "slug": "weather-meter",
+    "description": "This is a weather app where we can get the deatailed weatherinformation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splash2.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/imagescreen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
