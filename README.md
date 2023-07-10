@@ -1,3 +1,3 @@
-Wheather Meter
+Weather Meter
 
 
