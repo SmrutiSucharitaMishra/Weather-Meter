@@ -19,10 +19,8 @@ export default function HomeScreen() {
 
 
   const handleSearch = search=>{
-    // console.log('value: ',search);
     if(search && search.length>2)
       fetchLocations({cityName: search}).then(data=>{
-        // console.log('got locations: ',data);
         setLocations(data);
       })
   }
@@ -55,7 +53,6 @@ export default function HomeScreen() {
       cityName,
       days: '7'
     }).then(data=>{
-      // console.log('got data: ',data.forecast.forecastday);
       setWeather(data);
       setLoading(false);
     })
@@ -144,7 +141,7 @@ export default function HomeScreen() {
                 {/* weather icon */}
                 <View className="flex-row justify-center">
                   <Image 
-                    // source={{uri: 'https:'+current?.condition?.icon}} 
+                    
                     source={weatherImages[current?.condition?.text || 'other']} 
                     className="w-52 h-52" />
                   
@@ -204,7 +201,7 @@ export default function HomeScreen() {
                           style={{backgroundColor: theme.bgWhite(0.15)}}
                         >
                           <Image 
-                            // source={{uri: 'https:'+item?.day?.condition?.icon}}
+                           
                             source={weatherImages[item?.day?.condition?.text || 'other']}
                               className="w-11 h-11" />
                           <Text className="text-white">{dayName}</Text>
